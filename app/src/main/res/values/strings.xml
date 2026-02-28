@@ -27,7 +27,7 @@
     <string name="yes">Ja</string>
     <string name="no">Nein</string>
     <string name="exercises_count">%d \u00dcbungen</string>
-    <string name="set_detail">%d x %d @ %.1f kg</string>
+    <string name="set_detail" formatted="false">%d x %d @ %.1f kg</string>
     <string name="duration_format">Dauer: %s</string>
     <string name="save_template_first">Bitte speichere zuerst die Vorlage</string>
 </resources>
