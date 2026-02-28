@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/templateListFragment">
+
+    <fragment
+        android:id="@+id/templateListFragment"
+        android:name="com.fitnessapp.ui.templates.TemplateListFragment"
+        android:label="Vorlagen"
+        tools:layout="@layout/fragment_template_list">
+
+        <action
+            android:id="@+id/action_templateList_to_templateEdit"
+            app:destination="@id/templateEditFragment" />
+
+        <action
+            android:id="@+id/action_templateList_to_workout"
+            app:destination="@id/workoutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/templateEditFragment"
+        android:name="com.fitnessapp.ui.templates.TemplateEditFragment"
+        android:label="Vorlage bearbeiten"
+        tools:layout="@layout/fragment_template_edit">
+
+        <argument
+            android:name="templateId"
+            app:argType="long"
+            android:defaultValue="0" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.fitnessapp.ui.workout.WorkoutFragment"
+        android:label="Training"
+        tools:layout="@layout/fragment_workout">
+
+        <argument
+            android:name="templateId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.fitnessapp.ui.history.HistoryFragment"
+        android:label="Verlauf"
+        tools:layout="@layout/fragment_history">
+
+        <action
+            android:id="@+id/action_history_to_historyDetail"
+            app:destination="@id/historyDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyDetailFragment"
+        android:name="com.fitnessapp.ui.history.HistoryDetailFragment"
+        android:label="Trainingsdetail"
+        tools:layout="@layout/fragment_history_detail">
+
+        <argument
+            android:name="sessionId"
+            app:argType="long" />
+    </fragment>
+</navigation>

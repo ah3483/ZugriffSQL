@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="4dp">
+
+    <TextView
+        android:id="@+id/text_set_number"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary" />
+
+    <EditText
+        android:id="@+id/edit_weight"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:background="@drawable/edit_text_background"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+        android:hint="kg"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kg  x"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/text_secondary" />
+
+    <EditText
+        android:id="@+id/edit_reps"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:background="@drawable/edit_text_background"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+        android:hint="Wdh"
+        android:importantForAutofill="no" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:id="@+id/checkbox_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

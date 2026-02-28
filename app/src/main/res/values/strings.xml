@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FitnessTracker</string>
+    <string name="nav_templates">Vorlagen</string>
+    <string name="nav_history">Verlauf</string>
+    <string name="template_name">Vorlagenname</string>
+    <string name="template_description">Beschreibung (optional)</string>
+    <string name="exercise_name">\u00dcbungsname</string>
+    <string name="sets">S\u00e4tze</string>
+    <string name="reps">Wiederholungen</string>
+    <string name="weight">Gewicht (kg)</string>
+    <string name="add_exercise">\u00dcbung hinzuf\u00fcgen</string>
+    <string name="save">Speichern</string>
+    <string name="delete">L\u00f6schen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="start_workout">Training starten</string>
+    <string name="finish_workout">Training beenden</string>
+    <string name="new_template">Neue Vorlage</string>
+    <string name="edit_template">Vorlage bearbeiten</string>
+    <string name="no_templates">Keine Vorlagen vorhanden.\nErstelle deine erste Trainingsvorlage!</string>
+    <string name="no_history">Noch kein Training absolviert.\nStarte dein erstes Training!</string>
+    <string name="set_number">Satz %d</string>
+    <string name="workout_completed">Training abgeschlossen!</string>
+    <string name="confirm_delete">Wirklich l\u00f6schen?</string>
+    <string name="confirm_delete_template">M\u00f6chtest du diese Vorlage wirklich l\u00f6schen?</string>
+    <string name="confirm_finish_workout">M\u00f6chtest du das Training beenden und speichern?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="exercises_count">%d \u00dcbungen</string>
+    <string name="set_detail">%d x %d @ %.1f kg</string>
+    <string name="duration_format">Dauer: %s</string>
+    <string name="save_template_first">Bitte speichere zuerst die Vorlage</string>
+</resources>
