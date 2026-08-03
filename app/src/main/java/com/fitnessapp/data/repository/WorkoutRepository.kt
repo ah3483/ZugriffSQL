@@ -1,13 +1,15 @@
 package com.fitnessapp.data.repository
 
 import androidx.lifecycle.LiveData
+import com.fitnessapp.data.dao.StatisticsDao
 import com.fitnessapp.data.dao.WorkoutSessionDao
 import com.fitnessapp.data.dao.WorkoutTemplateDao
 import com.fitnessapp.data.model.*
 
 class WorkoutRepository(
     private val templateDao: WorkoutTemplateDao,
-    private val sessionDao: WorkoutSessionDao
+    private val sessionDao: WorkoutSessionDao,
+    private val statisticsDao: StatisticsDao
 ) {
     // Templates
     val allTemplates: LiveData<List<WorkoutTemplate>> = templateDao.getAllTemplates()
@@ -66,4 +68,22 @@ class WorkoutRepository(
 
     suspend fun insertCompletedSets(sets: List<CompletedSet>) =
         sessionDao.insertCompletedSets(sets)
+
+    // Statistics
+    val workoutSummary = statisticsDao.getWorkoutSummary()
+    val personalRecords = statisticsDao.getPersonalRecords()
+    val monthlyStats = statisticsDao.getMonthlyStats()
+    val allExerciseNames = statisticsDao.getAllExerciseNames()
+    val totalCompletedSessions = statisticsDao.getTotalCompletedSessions()
+    val mostUsedTemplate = statisticsDao.getMostUsedTemplate()
+    val totalVolumeKg = statisticsDao.getTotalVolumeKg()
+
+    fun getExerciseProgress(exerciseName: String) =
+        statisticsDao.getExerciseProgress(exerciseName)
+
+    fun getSessionCountSince(since: Long) =
+        statisticsDao.getSessionCountSince(since)
+
+    fun searchSessions(query: String) =
+        statisticsDao.searchSessions(query)
 }

@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         // Hide bottom navigation on certain screens
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
-                R.id.templateListFragment, R.id.historyFragment -> {
+                R.id.templateListFragment, R.id.historyFragment, R.id.statisticsFragment -> {
                     binding.bottomNavigation.visibility = View.VISIBLE
                 }
                 else -> {

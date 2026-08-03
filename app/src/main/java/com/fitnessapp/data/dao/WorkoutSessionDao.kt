@@ -38,4 +38,8 @@ interface WorkoutSessionDao {
 
     @Query("SELECT * FROM workout_sessions ORDER BY startedAt DESC LIMIT :limit")
     fun getRecentSessions(limit: Int): LiveData<List<WorkoutSession>>
+
+    @Transaction
+    @Query("SELECT * FROM workout_sessions ORDER BY startedAt DESC")
+    suspend fun getAllSessionsOnce(): List<WorkoutSessionWithExercises>
 }

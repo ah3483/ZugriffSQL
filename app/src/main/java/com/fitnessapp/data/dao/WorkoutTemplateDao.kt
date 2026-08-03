@@ -43,4 +43,8 @@ interface WorkoutTemplateDao {
 
     @Query("DELETE FROM exercise_templates WHERE workoutTemplateId = :templateId")
     suspend fun deleteAllExercisesForTemplate(templateId: Long)
+
+    @Transaction
+    @Query("SELECT * FROM workout_templates ORDER BY createdAt DESC")
+    suspend fun getAllTemplatesOnce(): List<WorkoutTemplateWithExercises>
 }

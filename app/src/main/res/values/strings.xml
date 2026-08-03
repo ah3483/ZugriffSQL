@@ -30,4 +30,20 @@
     <string name="set_detail" formatted="false">%d x %d @ %.1f kg</string>
     <string name="duration_format">Dauer: %s</string>
     <string name="save_template_first">Bitte speichere zuerst die Vorlage</string>
+    <string name="nav_statistics">Statistiken</string>
+    <string name="stats_overview">Übersicht</string>
+    <string name="stats_total_sessions">Trainings gesamt</string>
+    <string name="stats_total_exercises">Übungen gesamt</string>
+    <string name="stats_total_sets">Sätze gesamt</string>
+    <string name="stats_avg_duration">Ø Dauer</string>
+    <string name="stats_total_volume">Gesamtvolumen</string>
+    <string name="stats_last_30_days">Letzte 30 Tage</string>
+    <string name="stats_most_used">Beliebteste Vorlage</string>
+    <string name="stats_personal_records">Persönliche Rekorde</string>
+    <string name="stats_no_records">Noch keine Rekorde vorhanden</string>
+    <string name="stats_progress">Fortschritt pro Übung</string>
+    <string name="stats_monthly">Monatliche Übersicht</string>
+    <string name="stats_data_management">Datenverwaltung</string>
+    <string name="stats_export">Daten exportieren (JSON)</string>
+    <string name="stats_import">Daten importieren</string>
 </resources>

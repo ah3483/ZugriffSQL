@@ -64,4 +64,10 @@
             android:name="sessionId"
             app:argType="long" />
     </fragment>
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.fitnessapp.ui.statistics.StatisticsFragment"
+        android:label="Statistiken"
+        tools:layout="@layout/fragment_statistics" />
 </navigation>
